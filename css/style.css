@@ -58,7 +58,6 @@ h1 {
 @media (max-width:991px) and (min-width: 768px) {
   .container {
     flex-flow: row wrap;
-    /* background-color: red; */
   }
   .container-box {
     flex-basis: 350px;
@@ -68,7 +67,6 @@ h1 {
 @media (max-width:767px) {
   .container {
     flex-flow: row wrap;
-    /* background-color: lightgreen; */
   }
   .container-box {
     flex-basis: 400px;
