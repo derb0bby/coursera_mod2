@@ -17,8 +17,10 @@ h1 {
   padding: 0;
   margin: 0;
   width: 100%;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
+
+
 
 .container-box{
   display: flex;
@@ -27,7 +29,7 @@ h1 {
   margin: 10px;
   flex-basis: 350px;
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
   border: 3px solid gray;
   
 }
@@ -51,17 +53,26 @@ h1 {
   font-size: 0.8em;
 }
 
+/* Media Queries */
 
-/* @media (min-width: 950px) and (max-width: 1199px) {
+@media (max-width:991px) and (min-width: 768px) {
   .container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    /* background-color: red; */
+  }
+  .container-box {
+    flex-basis: 350px;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width:767px) {
   .container {
-    display: flex;
-    flex-direction: column;
-  } */
+    flex-flow: row wrap;
+    background-color: lightgreen;
+  }
+  .container-box {
+    flex-basis: 400px;
+    flex-shrink: 1;
+
+  }
+}
